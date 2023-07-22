@@ -42,7 +42,7 @@ return require('packer').startup(function(use)
       { 'neovim/nvim-lspconfig' },
       { 'williamboman/mason.nvim' },
       { 'williamboman/mason-lspconfig.nvim' },
-    
+
       -- Autocompletion
       { 'hrsh7th/nvim-cmp' },
       { 'hrsh7th/cmp-buffer' },
@@ -56,6 +56,8 @@ return require('packer').startup(function(use)
       { 'rafamadriz/friendly-snippets' },
     },
   }
+
+  use('darrikonn/vim-gofmt')
 
   -- Automatically setup the plugin configration after cloning packer.nvim
   -- This must always be after the list of plugins
